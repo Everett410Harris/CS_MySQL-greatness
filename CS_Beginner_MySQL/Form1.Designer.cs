@@ -52,8 +52,12 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,7 +90,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 132);
+            this.panel2.Location = new System.Drawing.Point(12, 213);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1359, 212);
             this.panel2.TabIndex = 1;
@@ -94,25 +98,26 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(12, 561);
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Location = new System.Drawing.Point(12, 431);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1337, 100);
+            this.panel3.Size = new System.Drawing.Size(1359, 381);
             this.panel3.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(12, 697);
+            this.panel4.Location = new System.Drawing.Point(12, 818);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1337, 100);
+            this.panel4.Size = new System.Drawing.Size(1359, 100);
             this.panel4.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(12, 803);
+            this.panel5.Location = new System.Drawing.Point(12, 924);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1337, 100);
+            this.panel5.Size = new System.Drawing.Size(1359, 80);
             this.panel5.TabIndex = 1;
             // 
             // headerLabel
@@ -289,12 +294,30 @@
             this.comboBox2.Size = new System.Drawing.Size(243, 45);
             this.comboBox2.TabIndex = 18;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 18);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1329, 351);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(12, 132);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1359, 75);
+            this.panel6.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(1383, 930);
+            this.ClientSize = new System.Drawing.Size(1383, 1016);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -307,6 +330,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,5 +362,7 @@
         private Panel panel5;
         private ComboBox comboBox2;
         private ComboBox comboBox1;
+        private DataGridView dataGridView1;
+        private Panel panel6;
     }
 }

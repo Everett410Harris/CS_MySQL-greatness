@@ -46,5 +46,26 @@ namespace CS_Beginner_MySQL
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (Control c in panel2.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        ((TextBox)c).Clear();
+                    }
+                }
+                searchTb.Clear();
+                genderCb.Text = "";
+                memberTypeCb.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

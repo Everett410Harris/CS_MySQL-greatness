@@ -319,23 +319,25 @@
             // 
             // addNewBtn
             // 
+            this.addNewBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.addNewBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.addNewBtn.Location = new System.Drawing.Point(104, 17);
             this.addNewBtn.Name = "addNewBtn";
             this.addNewBtn.Size = new System.Drawing.Size(173, 44);
             this.addNewBtn.TabIndex = 25;
-            this.addNewBtn.Text = "Search";
-            this.addNewBtn.UseVisualStyleBackColor = true;
+            this.addNewBtn.Text = "Add New";
+            this.addNewBtn.UseVisualStyleBackColor = false;
             // 
             // displayBtn
             // 
+            this.displayBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.displayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.displayBtn.Location = new System.Drawing.Point(518, 17);
             this.displayBtn.Name = "displayBtn";
             this.displayBtn.Size = new System.Drawing.Size(173, 44);
             this.displayBtn.TabIndex = 24;
             this.displayBtn.Text = "Display";
-            this.displayBtn.UseVisualStyleBackColor = true;
+            this.displayBtn.UseVisualStyleBackColor = false;
             // 
             // deleteBtn
             // 

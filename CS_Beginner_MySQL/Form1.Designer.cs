@@ -321,9 +321,9 @@
             // 
             this.addNewBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.addNewBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addNewBtn.Location = new System.Drawing.Point(104, 17);
+            this.addNewBtn.Location = new System.Drawing.Point(36, 17);
             this.addNewBtn.Name = "addNewBtn";
-            this.addNewBtn.Size = new System.Drawing.Size(173, 44);
+            this.addNewBtn.Size = new System.Drawing.Size(239, 44);
             this.addNewBtn.TabIndex = 25;
             this.addNewBtn.Text = "Add New";
             this.addNewBtn.UseVisualStyleBackColor = false;
@@ -332,9 +332,9 @@
             // 
             this.displayBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.displayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.displayBtn.Location = new System.Drawing.Point(518, 17);
+            this.displayBtn.Location = new System.Drawing.Point(309, 17);
             this.displayBtn.Name = "displayBtn";
-            this.displayBtn.Size = new System.Drawing.Size(173, 44);
+            this.displayBtn.Size = new System.Drawing.Size(239, 44);
             this.displayBtn.TabIndex = 24;
             this.displayBtn.Text = "Display";
             this.displayBtn.UseVisualStyleBackColor = false;
@@ -343,9 +343,9 @@
             // 
             this.deleteBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.deleteBtn.Location = new System.Drawing.Point(711, 17);
+            this.deleteBtn.Location = new System.Drawing.Point(576, 17);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(173, 44);
+            this.deleteBtn.Size = new System.Drawing.Size(239, 44);
             this.deleteBtn.TabIndex = 23;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = false;
@@ -354,9 +354,9 @@
             // 
             this.resetBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.resetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.resetBtn.Location = new System.Drawing.Point(936, 17);
+            this.resetBtn.Location = new System.Drawing.Point(838, 17);
             this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(173, 44);
+            this.resetBtn.Size = new System.Drawing.Size(239, 44);
             this.resetBtn.TabIndex = 22;
             this.resetBtn.Text = "Reset";
             this.resetBtn.UseVisualStyleBackColor = false;
@@ -365,9 +365,9 @@
             // 
             this.exitBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitBtn.Location = new System.Drawing.Point(1152, 17);
+            this.exitBtn.Location = new System.Drawing.Point(1102, 17);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(173, 44);
+            this.exitBtn.Size = new System.Drawing.Size(239, 44);
             this.exitBtn.TabIndex = 21;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = false;

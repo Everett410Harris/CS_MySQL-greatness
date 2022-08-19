@@ -65,6 +65,7 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +83,7 @@
             // 
             this.headerLabel.AutoSize = true;
             this.headerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.headerLabel.Location = new System.Drawing.Point(518, 12);
+            this.headerLabel.Location = new System.Drawing.Point(450, 12);
             this.headerLabel.Name = "headerLabel";
             this.headerLabel.Size = new System.Drawing.Size(518, 73);
             this.headerLabel.TabIndex = 0;
@@ -299,9 +300,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Location = new System.Drawing.Point(12, 818);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1359, 100);
+            this.panel4.Size = new System.Drawing.Size(1359, 87);
             this.panel4.TabIndex = 1;
             // 
             // panel5
@@ -312,16 +314,16 @@
             this.panel5.Controls.Add(this.deleteBtn);
             this.panel5.Controls.Add(this.resetBtn);
             this.panel5.Controls.Add(this.exitBtn);
-            this.panel5.Location = new System.Drawing.Point(12, 924);
+            this.panel5.Location = new System.Drawing.Point(3, 13);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1359, 80);
+            this.panel5.Size = new System.Drawing.Size(1347, 65);
             this.panel5.TabIndex = 1;
             // 
             // addNewBtn
             // 
             this.addNewBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.addNewBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addNewBtn.Location = new System.Drawing.Point(36, 17);
+            this.addNewBtn.Location = new System.Drawing.Point(36, 13);
             this.addNewBtn.Name = "addNewBtn";
             this.addNewBtn.Size = new System.Drawing.Size(239, 44);
             this.addNewBtn.TabIndex = 25;
@@ -332,7 +334,7 @@
             // 
             this.displayBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.displayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.displayBtn.Location = new System.Drawing.Point(309, 17);
+            this.displayBtn.Location = new System.Drawing.Point(309, 13);
             this.displayBtn.Name = "displayBtn";
             this.displayBtn.Size = new System.Drawing.Size(239, 44);
             this.displayBtn.TabIndex = 24;
@@ -343,7 +345,7 @@
             // 
             this.deleteBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.deleteBtn.Location = new System.Drawing.Point(576, 17);
+            this.deleteBtn.Location = new System.Drawing.Point(576, 13);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(239, 44);
             this.deleteBtn.TabIndex = 23;
@@ -354,7 +356,7 @@
             // 
             this.resetBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.resetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.resetBtn.Location = new System.Drawing.Point(838, 17);
+            this.resetBtn.Location = new System.Drawing.Point(838, 13);
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(239, 44);
             this.resetBtn.TabIndex = 22;
@@ -365,7 +367,7 @@
             // 
             this.exitBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitBtn.Location = new System.Drawing.Point(1102, 17);
+            this.exitBtn.Location = new System.Drawing.Point(1102, 13);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(239, 44);
             this.exitBtn.TabIndex = 21;
@@ -386,7 +388,7 @@
             // 
             this.selectBtn.BackColor = System.Drawing.Color.LavenderBlush;
             this.selectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.selectBtn.Location = new System.Drawing.Point(1026, 17);
+            this.selectBtn.Location = new System.Drawing.Point(974, 17);
             this.selectBtn.Name = "selectBtn";
             this.selectBtn.Size = new System.Drawing.Size(173, 44);
             this.selectBtn.TabIndex = 20;
@@ -396,7 +398,7 @@
             // searchTb
             // 
             this.searchTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.searchTb.Location = new System.Drawing.Point(576, 17);
+            this.searchTb.Location = new System.Drawing.Point(512, 17);
             this.searchTb.Name = "searchTb";
             this.searchTb.Size = new System.Drawing.Size(386, 44);
             this.searchTb.TabIndex = 19;
@@ -406,12 +408,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(1383, 1016);
+            this.ClientSize = new System.Drawing.Size(1383, 912);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -422,6 +423,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();

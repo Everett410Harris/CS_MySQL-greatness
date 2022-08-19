@@ -7,7 +7,7 @@ namespace CS_Beginner_MySQL
     {
         MySqlConnection sqlconn = new MySqlConnection();
         MySqlCommand sqlcmd = new MySqlCommand();
-        DataTable dt = new DataTable();
+        DataTable sqlDt = new DataTable();
         String sqlQuery;
         MySqlDataAdapter Dta = new MySqlDataAdapter();
         MySqlDataReader sqlRd;
@@ -25,7 +25,24 @@ namespace CS_Beginner_MySQL
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            uploadData();
+        }
 
+        private void uploadData()
+        {
+            sqlconn.ConnectionString = "server=" + server + ";"
+                + "username = " + username + ";"
+                + "password = " + password + ";"
+                + "database = " + database;
+
+            sqlconn.Open();
+            sqlcmd.Connection = sqlconn;
+            sqlcmd.CommandText = "select * from membership.membership";
+            sqlRd = sqlcmd.ExecuteReader();
+            sqlDt.Load(sqlRd);
+            sqlRd.Close();
+            sqlconn.Close();
+            dataGridView1.DataSource = sqlDt;
         }
 
         private void exitBtn_Click(object sender, EventArgs e)

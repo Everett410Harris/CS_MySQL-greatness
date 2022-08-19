@@ -339,6 +339,7 @@
             this.addNewBtn.TabIndex = 25;
             this.addNewBtn.Text = "Add New";
             this.addNewBtn.UseVisualStyleBackColor = false;
+            this.addNewBtn.Click += new System.EventHandler(this.addNewBtn_Click);
             // 
             // displayBtn
             // 

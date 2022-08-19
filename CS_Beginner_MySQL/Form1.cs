@@ -37,7 +37,7 @@ namespace CS_Beginner_MySQL
 
             sqlconn.Open();
             sqlcmd.Connection = sqlconn;
-            sqlcmd.CommandText = "select * from membership.membership";
+            sqlcmd.CommandText = "select * from membership";
             sqlRd = sqlcmd.ExecuteReader();
             sqlDt.Load(sqlRd);
             sqlRd.Close();
@@ -83,6 +83,36 @@ namespace CS_Beginner_MySQL
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void addNewBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlconn.ConnectionString = "server=" + server + ";"
+                + "username = " + username + ";"
+                + "password = " + password + ";"
+                + "database = " + database;
+
+                sqlconn.Open();
+
+                sqlQuery = "insert into membership(memid,firstname,lastname,address,postcode,gender,moblie,email,mtype)" +
+                    "values('" + memberIdTb.Text + "', '" + firstNameTb.Text + "', '" + lastNameTb.Text + "', '" + addressTb.Text + "', '" 
+                   + genderCb.Text + "', '" + moblieTb.Text + "', '" + postCodeTb.Text + "', '" + emailTb.Text + "', '" + memberTypeCb.Text + "')";
+
+                sqlcmd = new MySqlCommand(sqlQuery, sqlconn);
+                sqlRd = sqlcmd.ExecuteReader();
+                sqlconn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
+            uploadData();
         }
     }
 }

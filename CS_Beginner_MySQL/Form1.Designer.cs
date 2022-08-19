@@ -373,6 +373,7 @@
             this.exitBtn.TabIndex = 21;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // panel6
             // 

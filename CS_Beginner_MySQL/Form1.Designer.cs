@@ -119,6 +119,11 @@
             // 
             this.memberTypeCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.memberTypeCb.FormattingEnabled = true;
+            this.memberTypeCb.Items.AddRange(new object[] {
+            "",
+            "Annual",
+            "Monthly",
+            "Quarterly"});
             this.memberTypeCb.Location = new System.Drawing.Point(1107, 150);
             this.memberTypeCb.Name = "memberTypeCb";
             this.memberTypeCb.Size = new System.Drawing.Size(243, 45);
@@ -128,6 +133,11 @@
             // 
             this.genderCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genderCb.FormattingEnabled = true;
+            this.genderCb.Items.AddRange(new object[] {
+            "",
+            "Female",
+            "Male ",
+            "Other"});
             this.genderCb.Location = new System.Drawing.Point(624, 86);
             this.genderCb.Name = "genderCb";
             this.genderCb.Size = new System.Drawing.Size(243, 45);
